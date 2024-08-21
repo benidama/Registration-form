@@ -9,6 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Contact form</title>
   </head>
   <body>
@@ -17,11 +22,11 @@
       <div class="full-name">
         <div class="name">
           <label for="fistName">First Name <span>*</span></label> <br />
-          <input type="text" id="fistName" name="name" required />
+          <input type="text" id="fistName" class="name" name="name" required />
         </div>
         <div class="name">
           <label for="fistName">Last Name <span>*</span></label> <br />
-          <input type="text" id="fistName" name="name" required />
+          <input type="text" id="fistName" class="name" name="name" required />
         </div>
       </div>
       <br />
@@ -33,16 +38,16 @@
       <div class="radio-input full-name">
         <div id="query">
           <label for="gender">Query Type <span>*</span></label> <br />
-          <input type="text" name="equity" required />
+          <input type="text" name="equity" class="query" required />
           <!-- <input type="radio" value="equity" required id="gender"> -->
         </div>
         <div id="request">
           <label for="support">Support Request <span>*</span></label> <br />
-          <input type="text" name="equity" required />
+          <input type="text" name="equity" class="query" required />
           <!-- <input type="radio" value="equity" required id="support"> -->
         </div>
       </div>
-      <div id="message">
+      <div id="messages">
         <label for="message">Message <span>*</span></label> <br />
         <input type="text" id="message" required />
       </div>

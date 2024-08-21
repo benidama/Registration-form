@@ -12,6 +12,20 @@
   height: 100vh;
 }
 
+.name {
+  width: 245px;
+}
+
+.query {
+  width: 245px;
+}
+
+#email {
+  width: 500px;
+}
+#checker {
+  margin-right: 160px;
+}
 .full-name {
   display: flex;
   flex-direction: row;
@@ -20,4 +34,18 @@
 
 input {
   border-radius: 5px;
+}
+
+#checker {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border-radius: 5px;
+  width: 500px;
+}
+
+#message {
+  width: 500px;
 }
