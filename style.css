@@ -21,6 +21,7 @@
 
 .amail {
   border-radius: 8px;
+  padding-left: 10px;
 }
 
 #button {
@@ -31,6 +32,7 @@
   width: 245px;
   height: 40px;
   border-radius: 7px;
+  padding-left: 10px;
 }
 
 .change {
@@ -96,6 +98,7 @@ input {
 
 .area {
   border-radius: 10px;
+  padding-left: 10px;
 }
 
 .forn-query {
@@ -135,11 +138,6 @@ input {
 .check {
   display: flex;
   margin-top: 8px;
-}
-.notification {
-  display: none;
-  color: red;
-  margin-top: 10px;
 }
 
 .positio {
