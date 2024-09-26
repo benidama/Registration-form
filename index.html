@@ -17,45 +17,58 @@
     <title>Contact form</title>
   </head>
   <body>
-    <form id="container">
-      <h2>Contact Us</h2>
+    <div id="container">
+     <div class="together">
+      <h2>Contact Us</h2>   
+    <form id="form">
       <div class="full-name">
         <div class="name">
-          <label for="fistName">First Name <span>*</span></label> <br />
-          <input type="text" id="fistName" class="name" name="name" required />
+          <label for="fistName">First Name <span class="require">*</span></label> <br />
+          <input type="text" id="fistName" class="name" name="name"  />
+          <span id="firstNameError"></span>
         </div>
         <div class="name">
-          <label for="fistName">Last Name <span>*</span></label> <br />
-          <input type="text" id="fistName" class="name" name="name" required />
+          <label for="fistName">Last Name <span class="require">*</span></label> <br />
+          <input type="text" id="secondName" class="name" name="name"  />
+          <span id="secondNameError"></span>
         </div>
       </div>
       <br />
-      <div id="email">
-        <label for="email">Email Address <span>*</span></label> <br />
-        <input type="text" name="email" id="email" required />
+      <div id="email-card">
+        <label for="email">Email Address <span class="require">*</span></label> <br />
+        <input type="email" name="email" id="email" class="amail"  />
+        <span class="emailError"></span>
       </div>
       <br />
-      <div class="radio-input full-name">
-        <div id="query">
-          <label for="gender">Query Type <span>*</span></label> <br />
-          <input type="text" name="equity" class="query" required />
-          <!-- <input type="radio" value="equity" required id="gender"> -->
+      <div class="radio-input">
+        <label for="query-ty" class="daus">Query Type <span class="require">*</span></label> <br />
+      <div id="displays">
+        <div class="radio-option">
+          <input type="radio" id="gen-query" class="sizing"  name="name-query" value="General Enquiry"  />
+          <label for="gen-query">General Enquiry</label>
         </div>
-        <div id="request">
-          <label for="support">Support Request <span>*</span></label> <br />
-          <input type="text" name="equity" class="query" required />
-          <!-- <input type="radio" value="equity" required id="support"> -->
+        <div class="radio-option positio">
+          <input type="radio" id="Support-reque" class="forn-query sizing" name="name-query" value="Support Request"  />
+          <label for="Support-reque" class="label-sup">Support Request</label>
         </div>
       </div>
-      <div id="messages">
-        <label for="message">Message <span>*</span></label> <br />
-        <input type="text" id="message" required />
+      <span class="enquiryError"></span>
+     </div>
+      <div id="form-message">
+        <label for="message">Message <span class="require">*</span></label> <br />
+        <textarea cols="49" rows="40" name="message" id="message" class="area"></textarea>
+        <span id="messageError"></span>
       </div>
       <div id="checker">
-        <input type="checkbox" id="checkbox" required />
-        <label>I consent to being contacted by the team <span>*</span></label>
+        <input type="checkbox" id="checkbox" class="sizing check"  />
+        <label for="checkbox">I consent to being contacted by the team <span class="require">*</span></label>
       </div>
-      <button id="button">Submit</button>
+      <span id="consentError"></span>
+      <button type="submit" id="button">Submit</button>
+    </div>
     </form>
+</div>
+</div>
+<script src="./form.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
   font-family: "Karla";
 }
 
@@ -10,22 +11,57 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: hsl(148, 38%, 91%);
+}
+.together {
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.amail {
+  border-radius: 8px;
+}
+
+#button {
+  border-radius: 8px;
 }
 
 .name {
   width: 245px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.change {
+  display: flex;
+  flex-direction: column;
 }
 
 .query {
   width: 245px;
+  height: 40px;
 }
 
 #email {
   width: 500px;
+  height: 40px;
+  margin-top: 5px;
 }
+
+#message {
+  width: 500px;
+  height: 40px;
+  margin-top: 5px;
+}
+#email-card {
+  margin-top: 12px;
+}
+
 #checker {
   margin-right: 160px;
 }
+
 .full-name {
   display: flex;
   flex-direction: row;
@@ -33,19 +69,121 @@
 }
 
 input {
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 #checker {
   display: flex;
   gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-button {
-  border-radius: 5px;
+#button {
+  border-radius: 4px;
   width: 500px;
+  height: 50px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(169, 82%, 27%);
 }
 
-#message {
-  width: 500px;
+.form-item {
+  display: flex;
+  flex-direction: row;
+  width: 245px;
+  height: 40px;
+}
+
+.area {
+  border-radius: 10px;
+}
+
+.forn-query {
+  margin-top: 32px;
+}
+
+#full-form {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.require {
+  color: red;
+}
+
+.daus {
+  margin-top: 1px;
+}
+
+.radio-input {
+  display: flex;
+  margin-top: 12px;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#displays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  gap: 15px;
+  bottom: 18px;
+}
+
+.check {
+  display: flex;
+  margin-top: 8px;
+}
+.notification {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
+
+.positio {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.radio-option {
+  outline: solid 1px grey;
+  width: 245px;
+  height: 50px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 8px;
+}
+
+.label-sup {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.sizing {
+  width: 20px;
+  height: 20px;
+}
+
+.success {
+  background-color: darkslategray;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  padding: 13px;
+  color: rgb(207, 207, 205);
+  border-radius: 10px;
+  display: block;
+}
+
+#message-succ {
+  display: none;
+}
+
+.form-error {
+  display: block;
 }
